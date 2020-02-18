@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Galeria de Imagenes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let imagen of imagenes; index as i">
+        <img class="galeria" src="assets/galeria/{{imagen}}" alt="" srcset="" (click)="verImagen(i)">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
